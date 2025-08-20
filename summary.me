@@ -1,0 +1,52 @@
+Summary
+
+
+-->1. CIA Triad (Confidentiality, Integrity, Availability)
+-The CIA Triad forms the core principles of cybersecurity.
+-Confidentiality ensures only authorized individuals access data (e.g., passwords, encryption).
+-Integrity guarantees data is accurate and unchanged (e.g., checksums, digital signatures).
+-Availability ensures systems and data are accessible when needed (e.g., backups, redundancy).
+-This model provides the framework for all security policies and controls.
+
+
+-->2. Symmetric Encryption
+-Uses one shared secret key for both encryption and decryption.
+-Common algorithms: AES, DES, Blowfish.
+-Advantage: fast and efficient.
+-Limitation: key distribution problem (both parties must share the key securely).
+-Python demo: encrypted and decrypted messages using the Fernet module.
+
+
+-->3. Asymmetric Encryption
+-Uses a public-private key pair.
+-Public key encrypts data, private key decrypts it.
+-Common algorithms: RSA, ECC.
+-Advantage: solves the key distribution problem of symmetric encryption.
+-Limitation: slower than symmetric encryption.
+-Python demo: generated RSA keys, encrypted with the public key, decrypted with the private key.
+
+
+-->4. Digital Signatures
+-Provide authentication, integrity, and non-repudiation.
+-Created by signing a message with a private key; verified with the sender’s public key.
+-Ensures that the message truly came from the claimed sender and was not tampered with.
+-Python demo: signed a message with a private key and verified it with the corresponding public key.
+
+
+-->5. Network Security Basics
+-Firewalls: filter traffic and block unauthorized access.
+-VPNs: create secure tunnels over the internet to protect confidentiality.
+-HTTPS: secures web communication with TLS/SSL encryption.
+-Port Scanning: identifies open ports on a system (using tools like Nmap) to detect vulnerabilities.
+-Basic terminal commands (ping, traceroute, nmap) were introduced as practical tools.
+
+
+==>Connections Between Concepts
+
+>Encryption (symmetric and asymmetric) protects confidentiality.
+
+>Digital signatures protect integrity and provide authentication.
+
+>Network security tools like firewalls, VPNs, and HTTPS enforce the CIA Triad across systems.
+
+>Port scanning highlights the importance of monitoring for potential entry points to maintain availability and reduce risk.
