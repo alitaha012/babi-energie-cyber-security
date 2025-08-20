@@ -21,3 +21,4 @@ asymmetric encryption (also called public-key cryptography) uses a pair of keys:
 >>DSA (Digital Signature Algorithm): 
 -Used primarily for digital signatures, not encryption.
 
+
